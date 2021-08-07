@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.box1,.box2,.box3{
+    border: 1px solid black;
+    float: left;
+    margin: 1%;
+    background-color: #999999;   
+}
+
+
+.main div> h2{
+    float: right;
+    width: 110px;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    right: -1px;
+    top: -1px;
+}
+.box1 h2{
+    background: #D59898;
+}
+.box2 h2{
+    background-color:#C14543 ;
+}
+.box3 h2{
+    background-color: #E5D198;
+}
+
+.main div> p{
+    clear: right;
+    padding: 10px;
+}
+
+
+    /******** large divices only *********/
+@media (min-width:992px){
+    .col-lg-4{
+        width:30%;
+    }
+}
+
+
+    /********** medium devices only **********/
+ @media (max-width:991px) and (min-width:768px) {
+   .col-md-6{
+       width: 47%;
+   }
+   .col-md-12{
+       width: 96%;
+   }  
+}
+
+
+    /******** small devices only **********/
+ @media  (max-width:767px){
+    .col-sl-12{
+        width: 96%;
+    }
+} 
